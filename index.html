@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Record Work | C. Rasik Reddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem("rasik-java-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header class="titlebar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open project explorer">☰</button>
+    <a class="logo" href="#/home" aria-label="Java Record Work home">
+      <span class="logo-mark">J</span>
+      <span class="logo-text">java-record-work</span>
+    </a>
+    <nav class="title-links" aria-label="Quick links">
+      <a href="#/home" data-quick="home">Home</a>
+      <a href="#/profile" data-quick="profile">My Profile</a>
+    </nav>
+    <span class="title-badge">CSE • AI &amp; ML</span>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">◐</button>
+  </header>
+
+  <div class="shell">
+    <aside class="explorer" id="explorer" aria-label="Project explorer">
+      <div class="explorer-head">Project</div>
+      <div class="tree" id="tree"></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <section class="workspace">
+      <main class="editor" id="editor" tabindex="-1"></main>
+    </section>
+  </div>
+
+  <footer class="statusbar">
+    <span id="statusPath">README.md</span>
+    <span class="status-spacer"></span>
+    <span id="statusWho"></span>
+    <span>Java Record • 2026</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
